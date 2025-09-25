@@ -9,7 +9,7 @@ app.post("/api/v1/signUp", userRouter);
 async function runServer() {
     // const mongoUrl : string = process.env.MONGO_URL
     try {
-        await mongoose.connect("mongodb+srv://yagyesh21:yagyesh2106@cluster21.gsya3.mongodb.net/brainly");
+        await mongoose.connect("");
         console.log("db connected");
     }
     catch (error) {

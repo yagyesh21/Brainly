@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { UserModel } from "../db.js";
 export const userRouter = Router();
-userRouter.post("/", async (req, res) => {
+userRouter.post("/signup", async (req, res) => {
     try {
         const { username, password, email, phoneNumber } = req.body;
         const user = await UserModel.create({
